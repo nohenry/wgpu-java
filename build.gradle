@@ -6,20 +6,11 @@ plugins {
 group 'com.noahcharlton.wgpuj'
 version '0.1.0'
 
-sourceCompatibility = 11
-
 repositories {
     mavenCentral()
 }
 
 subprojects{
     apply plugin: 'com.diffplug.gradle.spotless'
-
-    spotless {
-        java {
-            removeUnusedImports()
-            indentWithSpaces()
-        }
-    }
 
 }
